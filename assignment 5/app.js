@@ -27,7 +27,7 @@ function palindrome() {
     var arrayReverse = convertToArray.reverse();
     var convertArrayToString = arrayReverse.join('');
 
-    (convertArrayToString==palindrome) ? alert("yes") : alert("no")
+    (convertArrayToString == palindrome) ? alert("yes") : alert("no")
 }
 
 
@@ -72,11 +72,122 @@ function occurrenceOfThe() {
 // 0 1 0
 // 0 0 1
 
-for(var i =0; i<=1; i++){
-    for(var j=0; j<=1; j++){
-    console.log(i,j,i);
+for (var i = 0; i <= 1; i++) {
+    console.log(j);
+    for (var j = 0; j <= 1; j++) {
+        console.log(i);
     }
 }
+
+// Write a for loop program that will print
+// 12345  *****
+// 1234    ****
+// 123      ***
+// 12        **
+// 1          *
+
+for (var i = 1; i <= 5; i++)
+{
+    for (var j = 5; j >= i; j--)
+    {
+        console.log(j);
+    }
+    // Console.WriteLine();
+    console.log();
+    for (var k = i; k > 0; k--)
+    {
+        console.log(" ");
+    }
+}
+
+
+
+// Write a JavaScript function which accepts an argument and returns the type.
+// Note : There are six possible values that typeof returns: object, boolean, function,
+//  number, string, and undefined.
+
+function typeCheck() {
+    function checkType(anyVariable) {
+        return typeof anyVariable;
+    }
+    var someVariable = checkType("some value")
+    console.log(someVariable);
+}
+
+
+
+// 8.	Make a javascript function, that should take arguments (2 operands + 1 operator) 
+// & based on that perform these actions. 
+// i) Sum 
+// ii) Divide
+// iii) Subtract
+// iv) Multiply
+
+// Note: Take values from user
+
+function mathOperations() {
+    function mathematicalOperations(num1, num2, operator) {
+        if (operator === "+") {
+            return num1 + num2;
+        } else if (operator === "-") {
+            return num1 - num2;
+        } else if (operator === "*") {
+            return num1 * num2;
+        } else if (operator === "/") {
+            return num1 / num2;
+        }
+    }
+
+    var num1 = prompt("Enter num1 value")
+    var num2 = prompt("Enter num2 value")
+    var operator = prompt("Enter operator value")
+
+    newNum1 = parseInt(num1);
+    newNum2 = parseInt(num2);
+
+    var result = mathematicalOperations(newNum1, newNum2, operator);
+    console.log(result);
+
+}
+
+// We need to store studentData into a variable, which data type we will be 
+// using to store that ? Could you make that variable & store these values 
+// - firstName 
+// - lastName
+// - rollNumber
+// - className
+// - midtermScore
+// - finalScore
+// - hasClassRepresentativeRole
+
+var studentData = {
+    firstName: "hassan",
+    lastName: "haroon",
+    rollNumber: 587,
+    className: "Intermediate",
+    midtermScore: 0,
+    finalScore: 0,
+    hasClassRepresentativeRole: "no"
+}
+
+// 10.	After storing these above values, could you access these below properties using 
+// javascript 
+// - className
+// - finalScore
+// - hasClassRepresentativeRole
+
+function objValues() {
+    console.log(studentData.className)
+    console.log(studentData.finalScore)
+    console.log(studentData.hasClassRepresentativeRole);
+}
+
+
+
+
+
+
+
 
 
 
