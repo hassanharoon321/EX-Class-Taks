@@ -1,28 +1,30 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-body{
-    background: url("./images/background.jpg");
-}
-
-.show-time{
-    text-align: center;
-    margin-top: 200px;
-
+body {
+  background: url("./images/background.jpg");
 }
 
-.show-time h1{
-    color: black;
-    font-size: 10em;
+.show-time {
+  text-align: center;
+  margin-top: 200px;
 }
 
-.large-buttons{
-    text-align: center;
+#time{
+    visibility: hidden;
 }
 
-.large-buttons button{
-    margin-left: 20px;
+.show-time h1 {
+  color: black;
+  font-size: 10em;
 }
 
+.large-buttons {
+  text-align: center;
+}
+
+.large-buttons button {
+  margin-left: 20px;
+}

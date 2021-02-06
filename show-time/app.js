@@ -1,12 +1,70 @@
+var time = document.getElementById("time");
+var timeFormat = "AM";
 
-
-setInterval(function timeStart() {
+setInterval(function () {
     var hours = new Date().getHours();
-var minutes = new Date().getMinutes();
-var seconds = new Date().getSeconds();
-    var programTime = hours + " : " + minutes + " : " + seconds;
-    document.getElementById("time").innerHTML = programTime;
+    if (hours > 12) {
+        hours = hours % 12;
+        timeFormat = "PM";
+    }
+    //  10
+    var currentHours = ("0" + hours).slice(-2)
+    var minutes = new Date().getMinutes();
+    var currentMinutes = ("0" + minutes).slice(-2)
+    var seconds = new Date().getSeconds();
+    var currentSeconds = ("0" + seconds).slice(-2)
+    var programTime = currentHours + " : " + currentMinutes + " : " + currentSeconds + " " + timeFormat;
+    time.innerHTML = programTime;
 }, 1000)
+//39600000
+
+function timeStart() {
+    if (time.style.visibility === 'hidden') {
+        time.style.visibility = 'visible';
+    }else{
+        time.style.visibility = 'visible';
+    }
+}
+
+function timeStop() {
+    if (time.style.visibility === 'hidden') {
+        time.style.visibility = 'visible';
+    } else {
+        time.style.visibility = 'hidden';
+    }
+}
+
+
+// var time =document.getElementById("time")
+// if (time.style.display === "none") {
+//     time.style.display = "block";
+// } else {
+//     time.style.display = "none";
+// }
+
+// setInterval(function timeStart(){
+//     var hours = new Date().getHours();
+//     if (hours > 12) {
+//         hours = hours % 12
+//     }
+//     var currentHours = ("0" + hours).slice(-2)
+//     var minutes = new Date().getMinutes();
+//     var currentMinutes = ("0" + minutes).slice(-2)
+//     var seconds = new Date().getSeconds();
+//     var currentSeconds = ("0" + seconds).slice(-2)
+
+
+//     var programTime = currentHours + " : " + currentMinutes + " : " + currentSeconds;
+//     // var time =document.getElementById("time")
+//     // if (time.style.display === "none") {
+//     //     time.style.display = "block";
+//     // } else {
+//     //     time.style.display = "none";
+//     // }
+//     console.log(programTime)
+
+//     time.innerHTML = programTime
+// }, 1000)
 
 
 
