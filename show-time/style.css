@@ -12,10 +12,6 @@ body {
   margin-top: 200px;
 }
 
-#time{
-    visibility: hidden;
-}
-
 .show-time h1 {
   color: black;
   font-size: 10em;
