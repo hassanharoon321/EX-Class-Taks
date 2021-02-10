@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <title>A Minute Timer</title>
+  </head>
+  <body>
+    <label>Enter Hours<input type="number" id="hours" value="200"/></label>
+    <label>Enter Minutes<input type="number" id="minutes" value="200"/></label>
+    <label>Enter Seconds<input type="number" id="seconds" value="200"/></label>
+    <div>
+      <button onclick="setTime()">Set Time</button>
+    </div>
+    <h1 id="timerShow">00 : 00 : 00</h1>
+
+    <button onclick="start()">Start</button>
+    <button onclick="stop()">Stop</button>
+    <button onclick="reset()">Reset</button>
+    <script src="app.js"></script>
+  </body>
+</html>

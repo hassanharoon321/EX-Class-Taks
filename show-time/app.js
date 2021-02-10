@@ -5,10 +5,8 @@ var interval;
 function timeStart() {
     interval = setInterval(function () {
         var hours = new Date().getHours();
-        if (hours > 12) {
+        if (hours >= 12) {
             hours = hours % 12;
-        }
-        if(hours>=12){
             timeFormat = "PM"
         }
         
