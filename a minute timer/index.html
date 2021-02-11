@@ -14,17 +14,17 @@
     <title>A Minute Timer</title>
   </head>
   <body>
-    <label>Enter Hours<input type="number" id="hours" value="200"/></label>
-    <label>Enter Minutes<input type="number" id="minutes" value="200"/></label>
-    <label>Enter Seconds<input type="number" id="seconds" value="200"/></label>
+    <label>Enter Minutes<input type="text" id="minutesEl" /></label>
     <div>
-      <button onclick="setTime()">Set Time</button>
+      <button onclick="setTimeEl()">Set Time</button>
     </div>
-    <h1 id="timerShow">00 : 00 : 00</h1>
+
+    <h1 id="timerShow">00 : 00</h1>
 
     <button onclick="start()">Start</button>
     <button onclick="stop()">Stop</button>
     <button onclick="reset()">Reset</button>
+
     <script src="app.js"></script>
   </body>
 </html>
