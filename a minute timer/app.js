@@ -16,6 +16,7 @@ var hello;
 function start() {
     straightTime = minutesInInt;
     time = straightTime * 60;
+    
     hello = setInterval(function () {
         var minutes = Math.floor(time / 60);
         var seconds = time % 60
@@ -31,7 +32,6 @@ function start() {
 
 
 function stop() {
-    
     clearInterval(hello)
 
 }

@@ -4,9 +4,32 @@
 }
 
 body {
-  max-width: 40%;
-  margin: auto;
+  display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 30px;
+  min-height: 100vh;
+}
+
+.one-time {
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  display: block;
+  justify-content: center;
+  align-items: center;
 }
